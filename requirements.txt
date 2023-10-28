@@ -1,0 +1,4 @@
+pymongo
+pyrogram
+requests
+tgcrypto
