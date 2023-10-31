@@ -25,11 +25,13 @@ jobs:
 
     - name: Sleep for 5:45 minutes
       run: |
-        sleep 345
+        sleep 5h 45m
 
     - name: Trigger workflow again
       run: |
         curl -X POST -H "Accept: application/vnd.github.v3+json" \
-        -H "Authorization: token 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" \
+        -H "Authorization: token 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" \
         https://api.github.com/repos/namodinr/gpt4all/actions/workflows/close_issues.yml/dispatches \
         -d '{"ref":"main"}'
+
+        sleep 10
