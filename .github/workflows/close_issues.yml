@@ -30,6 +30,6 @@ jobs:
     - name: Trigger workflow again
       run: |
         curl -X POST -H "Accept: application/vnd.github.v3+json" \
-        -H "Authorization: token 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" \
+        -H "Authorization: token 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" \
         https://api.github.com/repos/namodinr/gpt4all/actions/workflows/close_issues.yml/dispatches \
         -d '{"ref":"main"}'
